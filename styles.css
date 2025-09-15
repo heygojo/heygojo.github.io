@@ -1,0 +1,155 @@
+/* Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.flex-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.lang-card {
+  text-align: center;
+  margin: 10px;
+  width: 150px;
+}
+
+.lang-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.lang-image {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.lang-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.lang-card img:hover {
+  transform: scale(1.1);
+}
+
+.lang-card p {
+  font-weight: bold;
+  color: #333;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #444;
+  padding: 10px;
+}
+
+.flex-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.flex-nav a:hover {
+  background-color: #666;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #007acc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Containers */
+section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .flex-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Additional Styles */
+nav {
+  border-bottom: 2px solid #ccc;
+}
+
+header p {
+  font-style: italic;
+}
+
+section h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+section ul li a {
+  font-weight: bold;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background: linear-gradient(to right, #007acc, #00c6ff);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 0.9em;
+}
